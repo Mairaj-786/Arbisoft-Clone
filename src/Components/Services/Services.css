@@ -1,0 +1,46 @@
+.Services{
+    position: relative;
+    margin-top: 100px !important;
+    height: auto;
+}
+ .Services_text{
+     /* width: 87%; */
+     text-align: center;
+     margin: 0 auto;
+ }
+
+ 
+
+ /* Cards */
+ .cards{
+     position: relative;
+     margin-top: 1em;
+     padding: 2em 2em;
+    -webkit-box-shadow: -0px 1px 7px 0px rgb(165, 160, 160);
+    -moz-box-shadow:    -0px 1px 7px 0px rgb(165, 160, 160);
+    box-shadow:         -0px 1px 7px 0px rgb(165, 160, 160);
+ }
+ .font{
+     color: var(--color-bacground);
+     padding-bottom: 1em;
+ }
+ .cards a{
+     position: relative;
+     text-decoration-line: none;
+     color: var(--color-bacground);
+ }
+ .cards a:hover{
+     color: var(--color-bacground);
+ }
+
+ .arrow{
+     position: absolute;
+     right:  -30%;
+     top: -6%;
+     font-weight: 100 !important;
+     font-size: 23px;
+     
+ }
+
+
+ 

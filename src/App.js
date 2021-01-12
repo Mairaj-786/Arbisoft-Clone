@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Home from './Components/Home/Home'
+import Navbar from './Containers/Navbar/Navbar';
+import NavResponsive from './Containers/NavResponsive';
+
 
 function App() {
+
+  const [NavShow, SetNavShow] = React.useState(false)
+
+  const HandleToggle = () => SetNavShow(value => !value)
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar HandleToggle={HandleToggle} NavShow={NavShow} />
+        <NavResponsive NavShow={NavShow} />
+        <Switch>
+          <Route exact path='/' component={Home}></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

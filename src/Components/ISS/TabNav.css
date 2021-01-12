@@ -1,0 +1,27 @@
+.Industry_Services_Solutions{
+    position: relative;
+    height: 100vh;
+}
+
+.home{
+    display: flex;
+    margin-bottom: -1em;
+}
+
+.home__inner{
+    display: flex;
+}
+.home__inner__text{
+    margin-left: 2em;
+
+}
+.home__inner__text h4{
+    font-weight: 300;
+}
+
+@media (max-width: 991px){
+    .home{
+        display: block;
+        margin: 0 auto;
+    }
+}
